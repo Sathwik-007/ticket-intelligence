@@ -38,9 +38,9 @@ To deeply understand the optimization surfaces and vector mathematics, this syst
 
 1. **Client (Streamlit):** Captures raw text input and sends a JSON payload via POST request.
 2. **Inference Engine (FastAPI):**
-* Encodes text on-the-fly using cached `all-MiniLM-L6-v2` weights.
-* Computes squared Euclidean distance against trained K-Means centroids for routing assignment.
-* Calculates a confidence ratio using the distance delta between the primary and secondary centroids.
+  * Encodes text on-the-fly using cached `all-MiniLM-L6-v2` weights.
+  * Computes squared Euclidean distance against trained K-Means centroids for routing assignment.
+  * Calculates a confidence ratio using the distance delta between the primary and secondary centroids.
 
 
 3. **Retrieval Engine (FAISS):** Traverses the HNSW graph using the query vector to return the 5 nearest historical ticket matches in `< 1ms`.
@@ -74,7 +74,7 @@ uvicorn app.api:app --reload --port 8000
 
 ```
 
-* The Swagger documentation will be available at `http://localhost:8000/docs`
+*The Swagger documentation will be available at `http://localhost:8000/docs`*
 
 **4. Launch the UI (Streamlit)**
 *Open a new terminal window:*
