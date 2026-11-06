@@ -60,15 +60,7 @@ pip install -r requirements.txt
 
 ```
 
-**2. Generate Artifacts (Embeddings, Model, FAISS Index)**
-*This will download the 27,000-row Bitext dataset and compile the FAISS `.index` file.*
-
-```bash
-python scripts/embeddings_and_index.py
-
-```
-
-**3. Launch the Backend Microservice (FastAPI)**
+**2. Launch the Backend Microservice (FastAPI)**
 
 ```bash
 uvicorn app.api:app --reload --port 8000
@@ -77,7 +69,7 @@ uvicorn app.api:app --reload --port 8000
 
 *The Swagger documentation will be available at `http://localhost:8000/docs`*
 
-**4. Launch the UI (Streamlit)**
+**3. Launch the UI (Streamlit)**
 *Open a new terminal window:*
 
 ```bash
