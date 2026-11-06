@@ -76,7 +76,7 @@ uvicorn app.api:app --reload --port 8000
 
 ```
 
-* The Swagger documentation will be available at `http://localhost:8000/docs`
+*The Swagger documentation will be available at `http://localhost:8000/docs`*
 
 **4. Launch the UI (Streamlit)**
 *Open a new terminal window:*
